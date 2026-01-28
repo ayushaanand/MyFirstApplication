@@ -81,11 +81,14 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun isStrMatch() : Boolean {
-        var str1 : String? = loginName.text.toString()
-        var str2 : String? = keyInput.text.toString()
+        val str1 : String? = loginName.text.toString()
+        val str2 : String? = keyInput.text.toString()
 
-        if(str1 == str2) return true
-        else return false
+        return if ((str1 == str2)) {
+            true
+        } else {
+            false
+        }
     }
 
 }

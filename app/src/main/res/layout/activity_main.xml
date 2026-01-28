@@ -5,6 +5,7 @@
     android:id="@+id/mainUI"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/modern_background"
     tools:context=".MainActivity">
 
     <TextView
@@ -15,6 +16,8 @@
         android:layout_marginTop="56dp"
         android:text="Name : "
         android:textSize="20sp"
+        android:textColor="#333333"
+        android:fontFamily="monospace"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -25,6 +28,8 @@
         android:layout_marginTop="50dp"
         android:text="Key :"
         android:textSize="20sp"
+        android:textColor="#333333"
+        android:fontFamily="monospace"
         app:layout_constraintEnd_toEndOf="@+id/loginNameLabel"
         app:layout_constraintTop_toBottomOf="@+id/loginNameLabel" />
 
@@ -35,7 +40,10 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="52dp"
         android:text="Result Here"
-        android:textSize="20sp"
+        android:textSize="18sp"
+        android:textColor="#2C3E50"
+        android:fontFamily="sans-serif-medium"
+        android:textStyle="normal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/passKey" />
 
@@ -46,6 +54,7 @@
         android:layout_marginStart="60dp"
         android:ems="10"
         android:inputType="text"
+        android:fontFamily="monospace"
         app:layout_constraintBaseline_toBaselineOf="@+id/loginNameLabel"
         app:layout_constraintStart_toEndOf="@+id/loginNameLabel" />
 
@@ -55,7 +64,18 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPassword"
+        android:fontFamily="monospace"
         app:layout_constraintBaseline_toBaselineOf="@+id/passKey"
         app:layout_constraintStart_toStartOf="@+id/loginName" />
+
+    <ImageView
+        android:id="@+id/greeneryTexture"
+        android:layout_width="313dp"
+        android:layout_height="275dp"
+        android:alpha="0.8"
+        android:scaleType="fitEnd"
+        android:src="@drawable/greenery_texture"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
