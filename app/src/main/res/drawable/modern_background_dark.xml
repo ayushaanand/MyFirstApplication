@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Base Gradient -->
+    <item>
+        <shape>
+            <gradient
+                android:startColor="#121212"
+                android:endColor="#1E1E1E"
+                android:angle="135" />
+        </shape>
+    </item>
+
+    <!-- Subtle Accent Blob Top-Left -->
+    <item android:top="-100dp" android:left="-100dp">
+        <shape android:shape="oval">
+            <gradient
+                android:type="radial"
+                android:gradientRadius="300dp"
+                android:startColor="#254CAF50"
+                android:endColor="#004CAF50" />
+            <size android:width="400dp" android:height="400dp" />
+        </shape>
+    </item>
+
+    <!-- Subtle Accent Blob Middle-Right -->
+    <item android:top="200dp" android:right="-150dp">
+        <shape android:shape="oval">
+            <gradient
+                android:type="radial"
+                android:gradientRadius="400dp"
+                android:startColor="#202196F3"
+                android:endColor="#002196F3" />
+            <size android:width="500dp" android:height="500dp" />
+        </shape>
+    </item>
+</layer-list>
